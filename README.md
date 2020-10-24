@@ -6,7 +6,7 @@ Telu helps to create interactive text worlds.
 
 ### Telegram bot
 
-* (Set up)[https://dashboard.ngrok.com/get-started/setup] ngrok.
+* [Set up](https://dashboard.ngrok.com/get-started/setup) ngrok.
 * Create test Telegram bot.
 * Copy `.env_template` to `.env`.
 * Set ngrok URL as your test Telegram bot's webhook URL:  

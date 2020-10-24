@@ -12,5 +12,5 @@ func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/game", handlers.GameCreateHandler).Methods("POST")
 	r.HandleFunc("/turn", handlers.MakeTurnHandler).Methods("POST")
-	http.ListenAndServe("localhost:8090", r)
+	http.ListenAndServe("localhost:8095", r)
 }
