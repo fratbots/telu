@@ -5,21 +5,21 @@ import (
 	"net/http"
 )
 
-// GameSession represents a game started for a particular player.
-type GameSession struct {
-	ID       string `json:"id"`
-	GameID   string `json:"game_id"`
-	PlayerID string `json:"player_id"`
-	Token    string `json:"token"`
+// Game represents a game session started for a particular player.
+type Game struct {
+	ID         string `json:"id"`
+	ScenarioID string `json:"scenario_id"`
+	PlayerID   string `json:"player_id"`
+	Token      string `json:"token"`
 }
 
 // GameCreateHandler handles game creation request.
 func GameCreateHandler(w http.ResponseWriter, r *http.Request) {
-	game := &GameSession{
-		ID:       "game_session_1",
-		GameID:   "game_1",
-		PlayerID: "player_1",
-		Token:    "token_1",
+	game := &Game{
+		ID:         "game_1",
+		ScenarioID: "scenario_1",
+		PlayerID:   "player_1",
+		Token:      "token_1",
 	}
 
 	w.Header().Set("Content-Type", "application/json")
